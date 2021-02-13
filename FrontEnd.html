@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+    <title>ExceedCamp-miniProject-CarPark</title>
+    <Hx><h1 style="background-color: wheat;"><b><center>Car Park Website</center></b></h1>></Hx>
+</head>
+
+<body>
+
+    <script>
+        function showdata(data){
+            let myData1 = document.getElementById("LDR1");
+            var stateLot1 = 0;
+            var text1;
+            if(statelot1 == 0){
+                text = "Available";
+            }else{
+                text = "Unvailable";
+            }
+            document.getElementById("LDR1").innerText = text1;
+        }
+
+
+        fetch("https://exceed4.cpsk-club.xyz/find")
+            .then((response) => { response.json() ;
+            console.log(response)})
+    </script>
+
+
+
+    <BODY bgcolor="GREEN">
+    <center>
+    <img src="carExample1.jpg" width="20%" height="20%" shape="circle" >
+    <div style="border: 1px dashed #fff000; background-color: tomato; width: 20%;">Status Carpark Slot1</div>
+
+    <p id="LDR1"></p>
+    <script>
+        var statelot1 = 0; 
+        var text;
+        if(statelot1 == 0){
+            text = "Available";
+        }else{
+            text = "Unvailable";
+        }
+        document.getElementById("LDR1").innerText = text;
+    </script>
+
+    <img src="carExample1.jpg" width="20%" height="20%">
+    <div style="border: 1px dashed #fff000; background-color: tomato; width: 20%;">Status Carpark Slot2</div>
+
+    <p id="LDR2"></p>
+    <script>
+        var statelot2 = 1; 
+        var text;
+        if(statelot2 == 0){
+            text = "Available";
+        }else{
+            text = "Unvailable";
+        }
+        document.getElementById("LDR2").innerText = text;
+    </script>
+
+    <img src="carExample1.jpg" width="20%" height="20%">
+    <div style="border: 1px dashed #fff000; background-color: tomato; width: 20%;">Status Carpark Slot3</div>
+
+    <p id="LDR3"></p>
+    <script>
+        var statelot3 = 0; 
+        var text;
+        if(statelot3 == 0){
+            text = "Available";
+        }else{
+            text = "Unvailable";
+        }
+        document.getElementById("LDR3").innerText = text;
+    </script>
+    <img src="carExample1.jpg" width="20%" height="20%">
+    <div style="border: 1px dashed #fff000; background-color: tomato; width: 20%;">Status Carpark lot4</div>
+
+    <p id="LDR4"></p>
+    <script>
+        var statelot4 = 0;
+        var text;
+        if(statelot4 == 0){
+            text = "Available";
+        }else{
+            text = "Unvailable";
+        }
+        document.getElementById("LDR4").innerText = text;
+    </script>
+
+    </center>
+
+
+</body>
+<!-- <script src="carpark.js"></script> -->
+</html>
